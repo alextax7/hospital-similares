@@ -11,12 +11,7 @@ body{
     margin:0;
 }
 
-header{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+
 
 .contenedor{
     width:50%;
@@ -49,29 +44,40 @@ button{
 button:hover{
     background:#0077a3;
 }
+header{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
 .inicio{
-    width:auto !important;
-    display:inline-block;
-    padding:10px 20px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:8px 15px;
     background:#f4c542;
     color:black;
-    border:none;
+    text-decoration:none;
     border-radius:5px;
-    cursor:pointer;
+    font-size:14px;
+}
+
+.inicio:hover{
+    background:#e0b52f;
 }
 	
 </style>
 
 </head>
 <body>
-
 <header>
     <h1>Agendar Cita Médica</h1>
+    
+    <a href="index.html" class="inicio">Inicio</a>
 </header>
-<div style="text-align:center; margin:15px 0;">
-    <button type="button" class="inicio" onclick="location.href='index.html'">
-         Inicio
-    </button>
+
 </div>
 <form action="guardar_cita.php" method="POST">
 
