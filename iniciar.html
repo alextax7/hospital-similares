@@ -79,6 +79,19 @@ button:hover{
     background:#083866;
 }
 
+.boton-inicio{
+    width:auto !important;
+    padding:10px 20px;
+    background:#f4c542;
+    color:black;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.boton-inicio:hover{
+    background:#e0b52f;
+}
+
 .registro{
     margin-top:15px;
 }
@@ -95,9 +108,17 @@ button:hover{
 
 <div class="login-container">
 
-    <div class="logo"><img src="imagenes/simi1.png" width="273" height="183" alt=""/></div>
+    <button type="button"
+            class="boton-inicio"
+            onclick="location.href='index.html'">
+         Inicio
+    </button>
 
-    <h1>Hospital similares </h1>
+    <div class="logo">
+        <img src="imagenes/simi1.png" width="273" height="183" alt="">
+    </div>
+
+    <h1>Hospital Similares</h1>
     <p>Acceso al sistema de citas médicas</p>
 
     <form action="validar.php" method="POST">
@@ -115,7 +136,8 @@ button:hover{
     </form>
 
     <div class="registro">
-        ¿No tienes cuenta? <a href="https://alextax7.github.io/hospital-similares/registrarcuenta.html">Registrarse</a>
+        ¿No tienes cuenta?
+        <a href="registrarcuenta.html">Registrarse</a>
     </div>
 
 </div>
