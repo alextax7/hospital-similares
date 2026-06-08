@@ -49,20 +49,15 @@ button{
 button:hover{
     background:#0077a3;
 }
-button1{
-    width:100%;
-    padding:12px;
-    background:#0099cc;
-    color:white;
+.inicio{
+    width:auto !important;
+    display:inline-block;
+    padding:10px 20px;
+    background:#f4c542;
+    color:black;
     border:none;
     border-radius:5px;
-    font-size:18px;
     cursor:pointer;
-}
-
-.inicio{
-    width:auto;
-    padding:10px 20px;
 }
 	
 </style>
@@ -73,11 +68,11 @@ button1{
 <header>
     <h1>Agendar Cita Médica</h1>
 </header>
-<center>
-    <button1 type="button" class="inicio" onclick="location.href='index.html'">
+<div style="text-align:center; margin:15px 0;">
+    <button type="button" class="inicio" onclick="location.href='index.html'">
          Inicio
-    </button1>
-</center>
+    </button>
+</div>
 <form action="guardar_cita.php" method="POST">
 
 <label>Nombre completo:</label>
